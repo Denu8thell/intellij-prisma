@@ -8,6 +8,7 @@ version '1.2.3'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 // Include the generated files in the source set
@@ -15,6 +16,8 @@ sourceSets.main.java.srcDirs 'src/main/gen'
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.ballerina-platform:lsp4intellij:0.94.2'
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
